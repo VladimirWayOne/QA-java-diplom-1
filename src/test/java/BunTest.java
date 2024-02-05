@@ -8,17 +8,19 @@ import static constants.TestData.*;
 public class BunTest {
 
     private Bun bun;
+
     @Before
-    public void setUp(){
+    public void setUp() {
         bun = new Bun(BUN_NAME, BUN_PRICE);
     }
+
     @Test
-    public void getNameReturnBunName(){
+    public void getNameReturnBunName() {
         Assert.assertEquals("Некорректное имя", BUN_NAME, bun.getName());
     }
 
     @Test
-    public void getPriceReturnBunPrice(){
+    public void getPriceReturnBunPrice() {
         Assert.assertEquals("Некорректная цена", BUN_PRICE, bun.getPrice(), DELTA);
     }
 }

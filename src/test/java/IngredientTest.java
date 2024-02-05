@@ -24,7 +24,7 @@ public class IngredientTest {
 
     @Parameterized.Parameters
     public static Object[][] getIngredients() {
-        return new Object[][] {
+        return new Object[][]{
                 {IngredientType.SAUCE, "Кетчуп", 10.10f},
                 {IngredientType.FILLING, "Котлета", 20.20f}
         };
@@ -39,6 +39,7 @@ public class IngredientTest {
     public void getNameReturnIngredientName() {
         Assert.assertEquals("Некорректное название ингридиента", name, ingredient.getName());
     }
+
     @Test
     public void getPriceReturnIngredientPrice() {
         Assert.assertEquals("Некорректная цена ингридиента", price, ingredient.getPrice(), DELTA);

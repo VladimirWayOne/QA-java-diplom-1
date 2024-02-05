@@ -101,13 +101,12 @@ public class BurgerTest {
         burger.setBuns(bun);
         String expectedReceipt = String.format(
                 "(==== %s ====)\r\n" +
-                "= filling %s =\r\n" +
-                "= sauce %s =\r\n" +
-                "= filling %s =\r\n" +
-                "(==== %s ====)\r\n" +
-                "\r\n" +
-                "Price: %f\r\n", bun.getName(), cutlet.getName(), chili.getName(), sausage.getName(), bun.getName(),bun.getPrice() * 2 + cutlet.getPrice() + sausage.getPrice() + chili.getPrice());
-//        System.out.println(expectedReceipt+"\r\n"+burger.getReceipt());
-        Assert.assertEquals("ожидался другой чек",expectedReceipt,burger.getReceipt());
+                        "= filling %s =\r\n" +
+                        "= sauce %s =\r\n" +
+                        "= filling %s =\r\n" +
+                        "(==== %s ====)\r\n" +
+                        "\r\n" +
+                        "Price: %f\r\n", bun.getName(), cutlet.getName(), chili.getName(), sausage.getName(), bun.getName(), bun.getPrice() * 2 + cutlet.getPrice() + sausage.getPrice() + chili.getPrice());
+        Assert.assertEquals("ожидался другой чек", expectedReceipt, burger.getReceipt());
     }
 }
