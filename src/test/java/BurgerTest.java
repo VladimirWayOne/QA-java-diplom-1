@@ -58,12 +58,6 @@ public class BurgerTest {
         burger.bun = null;
     }
 
-    //    setBuns
-//    addIngredient
-//    removeIngredient
-//    moveIngredient
-//    getPrice
-//    getReceipt
     @Test
     public void setBunSetsBunNotNull() {
         burger.setBuns(bun);
